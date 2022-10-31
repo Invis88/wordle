@@ -1,0 +1,52 @@
+.board {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 5px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+}
+
+.tile {
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+
+    border: 2px solid #565758;
+    background: #121213;
+}
+
+.filled {
+    border-color: #C6C3C3;
+}
+
+.present {
+   border-color: #AEA500;
+   background-color: #AEA500;
+}
+
+.wrong {
+    border-color: #565758;
+    background-color: #565758;
+}
+
+.correct {
+    border-color: #049400;
+    background-color: #049400;
+}
+
+/* RESPONSIVE RES */
+@media only screen and ((max-width: 600px) or (max-height: 600px)) {
+    .tile {
+        width: 3rem;
+        height: 3rem;
+        line-height: 3rem;
+    }
+}
